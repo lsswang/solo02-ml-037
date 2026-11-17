@@ -1,0 +1,3 @@
+# Heterogeneous-label collaborative distillation
+Run `python3 demo.py` with Python 3.11, NumPy and SciPy. local_model is a working two-layer tanh classifier trained from exact local labels. consensus averages padded class probabilities; it is an ordinary all-label baseline. Synthetic clients differ in input dimension, hidden width and local label order. Rows of public_X refer to the same public example identity across clients, while feature spaces differ.
+The task is numerical model collaboration, with no server process, networking or scheduling. An external report consumer need not have client models, and a local objective consumer may provide any valid global teacher.
